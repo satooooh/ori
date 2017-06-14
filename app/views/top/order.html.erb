@@ -1,1 +1,12 @@
-<%= @tete %>
+<div class="contents row">
+  <%= form_tag('/top', method: :post) do %>
+  <h3>注文</h3>
+    <label>
+      <input type="radio" name="goods" value="1"> goods1
+    </label><br>
+    <label>
+      <input type="radio" name="goods" value="2"> goods2
+    </label><br><br>
+    <input type="submit" value="注文する">
+  <% end %>
+</div>
